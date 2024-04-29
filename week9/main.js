@@ -8,6 +8,9 @@ const users = { 0: '유저1', 1: '유저2' }
 let count = 2; // 다음 이름의 ID를 저장
 
 http.createServer(async (req, res) => {
+    const reqUrl = req.url; // 요청 URL 저장
+    console.log(reqUrl); // 요청 URL 터미널에 출력
+    
     if (req.method === 'GET') {
         if (req.url === '/') {
             const data = await fs.readFile(path.join(__dirname, 'index.html'));

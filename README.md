@@ -1,3 +1,3 @@
-## nodejs-workspace
+## NodeJS-Workspace
 
 🔥 About Studying nodejs
